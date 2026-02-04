@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA GTC 2025 | Healthcare & Life Sciences Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; scroll-behavior: smooth; }
+        .nvidia-green { color: #76b900; }
+        .bg-nvidia-green { background-color: #76b900; }
+        .border-nvidia-green { border-color: #76b900; }
+        .promo-gradient {
+            background: linear-gradient(90deg, #76b900 0%, #86d100 50%, #3b82f6 100%);
+        }
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="selection:bg-[#76b900] selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-nvidia-green rounded-sm flex items-center justify-center font-bold text-black text-xl">N</div>
+            <span class="font-bold tracking-tighter text-xl">GTC <span class="nvidia-green">2025</span></span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+            <a href="#sessions" class="hover:text-[#76b900] transition-colors">Sessions</a>
+            <a href="#tech" class="hover:text-[#76b900] transition-colors">Technologies</a>
+            <a href="#pricing" class="hover:text-[#76b900] transition-colors">Pricing</a>
+        </div>
+        <a href="https://www.nvidia.com/gtc/?ncid=GTC-NVZC9DIJ" target="_blank" class="bg-nvidia-green text-black px-5 py-2 rounded-full font-bold text-sm hover:bg-[#86d100] transition-all transform hover:scale-105">
+            Register Now
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#76b900]/10 blur-[120px] rounded-full"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col items-center text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-700 nvidia-green text-xs font-bold uppercase tracking-widest mb-8 animate-fade-in">
+                    Healthcare & Life Sciences Focus
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight max-w-4xl">
+                    The Conference for the <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[#76b900]">
+                        Era of AI Medicine
+                    </span>
+                </h1>
+                
+                <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+                    Join the brightest minds in biology, clinical research, and medtech to explore how accelerated computing is redefining the future of healthcare.
+                </p>
+
+                <!-- Promo Card -->
+                <div class="w-full max-w-2xl p-1 rounded-2xl promo-gradient shadow-2xl shadow-[#76b900]/20">
+                    <div class="bg-black rounded-[14px] px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <p class="nvidia-green font-bold text-sm uppercase tracking-wider mb-1">Exclusive Offer</p>
+                            <p class="text-2xl font-bold">Save 25% on your pass</p>
+                        </div>
+                        
+                        <div class="flex items-center gap-2">
+                            <div onclick="copyCode()" class="flex items-center gap-3 bg-zinc-900 border border-zinc-700 hover:border-[#76b900] cursor-pointer px-4 py-3 rounded-lg transition-all group">
+                                <code id="promo-code" class="text-xl font-mono font-bold text-white tracking-wider">NV7R747A</code>
+                                <div id="copy-status">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover:text-[#76b900]"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 flex flex-wrap justify-center gap-8 text-zinc-400 text-sm font-medium">
+                    <div class="flex items-center gap-2">March 17–20, 2025</div>
+                    <div class="flex items-center gap-2">San Jose, CA & Virtual</div>
+                    <div class="flex items-center gap-2">Global Community</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Pillars -->
+    <section class="py-24 px-6 bg-[#050505]" id="sessions">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Driving Innovation Across the Care Continuum</h2>
+                <div class="h-1 w-20 bg-nvidia-green"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-[#76b900]/50 transition-all hover:-translate-y-1">
+                    <h3 class="text-xl font-bold mb-4 text-pink-500">Drug Discovery & Genomics</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">Discover how BioNeMo is slashing drug development timelines from years to months using generative AI for protein and small molecule design.</p>
+                </div>
+                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-[#76b900]/50 transition-all hover:-translate-y-1">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500">Medical Imaging & Diagnostics</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">Explore the next generation of MONAI and Holoscan for real-time AI inference in clinical workflows and surgical robotics.</p>
+                </div>
+                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-[#76b900]/50 transition-all hover:-translate-y-1">
+                    <h3 class="text-xl font-bold mb-4 nvidia-green">Smart Hospitals & Digital Health</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">From patient monitoring to clinical documentation, learn how LLMs and edge AI are reducing clinician burnout and improving outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-24 px-6 bg-black text-center" id="pricing">
+        <div class="max-w-4xl mx-auto bg-zinc-900 border border-zinc-800 rounded-3xl p-10 relative overflow-hidden">
+            <h3 class="text-2xl font-bold mb-2">Claim Your Discount</h3>
+            <p class="text-zinc-400 mb-8">Use my personal referral code during checkout to save 25% on full conference passes.</p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div onclick="copyCode()" class="bg-black border border-nvidia-green px-10 py-5 rounded-xl cursor-pointer hover:bg-nvidia-green/5 transition-colors">
+                    <span class="text-3xl font-mono font-black tracking-widest nvidia-green">NV7R747A</span>
+                </div>
+                <a href="https://www.nvidia.com/gtc/pricing/?regcode=GTC-NVZC9DIJ" target="_blank" class="bg-nvidia-green text-black px-10 py-5 rounded-xl font-black text-xl hover:bg-[#86d100] transition-all transform hover:scale-105">
+                    REGISTER NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-zinc-600 text-sm border-t border-zinc-900">
+        <p>&copy; 2025 NVIDIA Corporation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyCode() {
+            const code = "NV7R747A";
+            const textArea = document.createElement("textarea");
+            textArea.value = code;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            const status = document.getElementById('copy-status');
+            status.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#76b900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+            
+            setTimeout(() => {
+                status.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover:text-[#76b900]"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
